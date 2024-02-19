@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body id="scroll">
+    <audio id="music" src="cafemusic.mp3" autoplay loop></audio>
+    <section class="">
+      <h1 class="display-2 hidden left" id="welcome">Hi Shehnaz!</h1>
+      <div class="d-flex gap-2 hidden right">
+        <button type="button" class="btn btn-outline-light" id="hi">
+          Hiiii
+        </button>
+        <button type="button" class="btn btn-outline-danger" id="bye">
+          Byee
+        </button>
+      </div>
+    </section>
+
+    <section class="" id="kabar-sect">
+      <h1 class="display-2 hidden left" id="kabar">Apa Kabar?</h1>
+      <div class="emojis mt-4">
+        <span class="display-2 hidden emoji" id="e0">😀</span>
+        <span class="display-2 hidden emoji" id="e1">🙂</span>
+        <span class="display-2 hidden emoji" id="e2">😐</span>
+        <span class="display-2 hidden emoji" id="e3">🙁</span>
+        <span class="display-2 hidden emoji" id="e4">😭</span>
+        <span class="display-2 hidden emoji" id="e5">😡</span>
+        <span class="display-2 hidden emoji" id="e6">🤢</span>
+      </div>
+    </section>
+
+    <section id="logos-sect">
+      <h1 class="display-2 hidden left" id="logos">Ingat ini gaa?</h1>
+      <div class="logos mt-4 mb-3">
+        <div class="logo hidden right hvr">
+          <img src="img/pic1.png" alt="" />
+        </div>
+        <div class="logo hidden right hvr">
+          <img src="img/pic2.png" alt="" />
+        </div>
+        <div class="logo hidden right hvr">
+          <img src="img/pic3.png" alt="" />
+        </div>
+        <div class="logo hidden right hvr">
+          <img src="img/pic4.png" alt="" />
+        </div>
+      </div>
+      <div class="d-flex gap-3 hidden right mt-5">
+        <button type="button" class="btn btn-outline-light logo-btn" id="l0">
+          Ingat
+        </button>
+        <button type="button" class="btn btn-outline-warning logo-btn" id="l1">
+          Gaaa
+        </button>
+      </div>
+    </section>
+
+    <section id="images-sect">
+      <h1 class="display-2 hidden down" id="images">Lucu ya kita?</h1>
+      <div class="images mt-2">
+        <div class="image hidden left hvr">
+          <img src="img/pic2.1.png" alt="" />
+        </div>
+        <div class="image hidden right hvr">
+          <img src="img/pic2.2.png" alt="" />
+        </div>
+      </div>
+      <div class="images">
+        <div class="image hidden left hvr">
+          <img src="img/pic2.3.png" alt="" />
+        </div>
+        <div class="image hidden right hvr">
+          <img src="img/pic2.4.png" alt="" />
+        </div>
+      </div>
+      <div class="d-flex justify-content-center hidden small stressed none">
+        <img src="img/stressed.gif" alt="" />
+      </div>
+      <div class="d-flex justify-content-center hidden small lovely none">
+        <img src="img/lovely.gif" alt="" />
+      </div>
+      <div class="d-flex gap-3 hidden right mt-5">
+        <button type="button" class="btn btn-outline-light logo-btn" id="i0">
+          LUCU
+        </button>
+        <button type="button" class="btn btn-outline-danger logo-btn" id="i1">
+          Biasa aja
+        </button>
+        <button
+          type="button"
+          class="btn btn-outline-warning logo-btn none"
+          id="i2"
+        >
+          IYAA LUCUU
+        </button>
+      </div>
+    </section>
+
+    <section id="questions-sect">
+      <h1 class="display-2 hidden left" id="questions">Kamu Kangen Aku Ga?</h1>
+      <div class="d-flex justify-content-center hidden small pissed none">
+        <img src="img/pissed.gif" alt="" />
+      </div>
+      <div class="d-flex justify-content-center hidden small crying none">
+        <img src="img/crying.gif" alt="" />
+      </div>
+      <div class="d-flex gap-3 hidden right mt-2">
+        <button type="button" class="btn btn-outline-light logo-btn" id="q0">
+          Kangen Banget
+        </button>
+        <button type="button" class="btn btn-outline-danger logo-btn" id="q1">
+          Enggak
+        </button>
+      </div>
+    </section>
+
+    <section id="messages-sect">
+      <h1 class="display-2 hidden left" id="questions">Ada Pesan Untuk Kamu</h1>
+      <div class="hidden down">
+        <div class="content animate__animated animate__bounceInDown">
+          <img
+            onclick="tampil()"
+            class="surat"
+            src="img/letter.png"
+            alt="MAIL"
+          />
+        </div>
+      </div>
+
+      <div class="content2">
+        <div class="paper animate__animated animate__bounceIn" id="content2">
+          <div class="paper-content">
+            <textarea class="pesan" disabled></textarea>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mt-4">
+          <button type="button" id="close" class="btn btn-light">Close</button>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer type="module" src="app.js"></script>
+    <script defer src="pesan.js"></script>
+  </body>
+</html>
